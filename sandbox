@@ -1,0 +1,30 @@
+
+
+req_byloc = req.groupby('location_name')
+req_bycat = req.groupby('category_name')
+
+print req_byloc['duration_in_hour'].mean()
+print req_bycat['duration_in_hour'].mean()
+
+# Acitvity
+avg_req_byloc =  pd.DataFrame(req.groupby('location_name')['duration_in_hour'].mean())
+print avg_req_byloc.sort( ascending = False).head(10)
+
+
+
+avg_req_bycat =  pd.DataFrame(req.groupby('category_name')['duration_in_hour'].mean())
+print avg_req_bycat.sort( ascending = False).head(10)
+
+#print req_bycat.count()
+
+avg_inv_bycat =  pd.DataFrame(inv.groupby('category_name')['duration_in_hour'].mean())
+print avg_inv_bycat.sort( ascending = False).head(10)
+
+avg_inv_bycat =  pd.DataFrame(inv.groupby('category_name')['duration_in_hour'].mean())
+print avg_inv_bycat_bycat.count()
+
+count_inv_cat =  pd.DataFrame(inv_byreq_cat['inv_id','quote_id'].count())
+
+print count_inv_cat_cat.describe()
+
+print inv_byreq_loc['inv_id','quote_id'].agg(['count'])

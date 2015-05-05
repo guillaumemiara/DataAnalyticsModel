@@ -1,0 +1,18 @@
+General approach to the problem:
+
+1. Data Exploration to get a better understanding of the problem
+
+2. Resolving the problem with an MVI : Data Analysis
+a) Define in details the operational questions to answer
+b) Answer each of these questions
+
+3. Discussion about moving this further into production
+a. What are the new data requirements from the analysis
+b. Datamart design for an automated analysis
+c. Prediction models: Machine Learning applications to this problem
+
+Files:
+- pandb.py: a bunch of utilities I have fount useful to create along the way for reusability or readibility
+- Questions.txt: a series of operational questions that flow naturally after a data exploration
+- analysis.py
+- requestAnalysis.py

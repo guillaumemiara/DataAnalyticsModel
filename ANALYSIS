@@ -1,0 +1,53 @@
+0. High level
+-------------
+
+In the given sample, there are:
+- 24622 invites that have been sent to service providers
+- 12819 invites got and answer
+So the average ratio of answer is about 0.5
+There has been 4961 requests
+So 5 invites are sent per request on average, and 2 to 3 quotes are received by the user
+
+1. Analysis of quote/requests : answer rate & answer profile
+------------------------------------------------------------
+
+There is a large spread from one categories to another for the ratio of quotes invites sent to the quotes sent.
+This means that the service providers do not have the same "levels" of professionalism?
+Some professions tend to answer more to the customers.
+
+What could explain this ?
+Is it because these professions receive to many invites?
+-> Look at the total # invites for the professions with lowest ratio
+How does it compare to the total # of invite?
+
+-> Is it because of some locations where some service providers are particularly bad?
+Let's get the standard deviation of ratio per location for the top bad places
+
+If we look at the standard deviation accross locations for the top 30 categories with the lowest answer ratio rate,
+we realize that there it is not very high.
+Same for the categories with a high answer ratio rate.
+So no matter what the location is, we can fairly say that it really is a property of a category to have a low or high
+answer quotes / invite rate.
+
+Time to answer?
+
+2. Analysis of service providers
+--------------------------------
+
+Now if service providers are not so profesionnal depending on the categories, lets look deeper into these guys behavior
+
+print inv_bysrvprov.describe() already provide a lot of information
+
+- 75% of the service providers receive less than 32 invites to send a quote
+- 75% of the service providers send less than 17 quotes
+- The top 25% of service providers are roughly those sending answer to more than 2/3 of their quotes invites
+- The mean of inv_id is 24 and the 50% percentile is at 18. So it is a smaller number of service providers who gets the most quotes
+
+If we look at it in more details
+
+
+3. Analysis of customers behavior
+---------------------------------
+
+We fall short on the analysis here...
+No customers have more than one request on this dataset.

@@ -1,0 +1,33 @@
+Below is a list of questions that I would like to answers based on the data available.
+
+1. Analysis of quote requests
+-----------------------------
+Operational problem: How many quotes invites should we sent for each requests? To who?
+This calls for an analysis of the requests:
+For each requests:
+    How many quotes invites were sent?
+    How many of these quotes got an answer?
+Dimensions in category, location
+
+What's the average quote invites / request ratio:
+        per location
+        per category
+What's the average quote answers / quote invite ratio:
+        per location
+        per category
+
+2. Analysis of behavior of service providers in quote request process
+---------------------------------------------------------------------
+What is the behavior of service providers interacting with the application?
+- When do they answer to quotes?
+    when they have many requests?
+    when they don't have so many requests?
+- CLustering of service providers behavior
+    time to answer rate
+    rate of answers
+Dimensions in category, location
+
+3. Analysis of behavior of service requester
+---------------------------------------------
+How do they react when they don't receive quotes/ when they receive too many quotes?
+What is the frequency of request on average per category, per location
